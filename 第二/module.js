@@ -19,6 +19,7 @@
 // 使用内置模块
 // let fs = require('fs');
 
+
 let test1 = require('test')
 // console.log(require.cache)
 

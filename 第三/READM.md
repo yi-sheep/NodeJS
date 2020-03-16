@@ -9,12 +9,12 @@
     
 ### fs.writeFile()
 ```js
-    /**
-     * 写入内容 异步函数
-     * 如果文件存在则直接写入内容
-     * 如果不存在就创建文件再写入内容
-     */
-    fs.writeFile(file, data[, options], callback)
+/**
+ * 写入内容 异步函数
+ * 如果文件存在则直接写入内容
+ * 如果不存在就创建文件再写入内容
+ */
+fs.writeFile(file, data[, options], callback)
 ```
 
  - file:写入文件地址
@@ -24,22 +24,22 @@
     + err 接受的异常对象 函数参数
 
 ### fs.writeFileSync()
-    ```js
-        /** 
-         * 写入内容 同步函数
-         * 参数和异步的一致
-         * 没有回调函数 需要特别处理异常情况
-         */
-        fs.writeFileSync(file, data[, options])
-    ```
+```js
+/** 
+ * 写入内容 同步函数
+ * 参数和异步的一致
+ * 没有回调函数 需要特别处理异常情况
+ */
+fs.writeFileSync(file, data[, options])
+```
 
 ### fs.readFile()
-    ```js
-        /** 
-         * 读取内容 异步函数
-         */
-        fs.readFile(path[, options], callback)
-    ```
+```js
+/** 
+ * 读取内容 异步函数
+ */
+fs.readFile(path[, options], callback)
+```
 - path:文件路径
 - options:文件选项
 - callback:回调函数
@@ -47,12 +47,12 @@
     + data 读取的内容
 
 ### fs.readFileSync()
-    ```js
-        /** 
-         * 读取内容 同步函数
-         */
-        fs.readFileSync(path[, options])
-    ```
+```js
+/** 
+ * 读取内容 同步函数
+ */
+fs.readFileSync(path[, options])
+```
 
 ---
 
