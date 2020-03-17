@@ -119,4 +119,4 @@ let promise = new Promise(fun(resolve,reject){
     ...  // 后面的都是一样
     .catch((data)=>{}); // 无论上面的所有执行器函数中哪一个调用了reject都会执行这个catch
     ```
-    [课后练习](https://github.com/yi-sheep/NodeJS/blob/master/第三/proimse.js)
+    [课后练习](https://github.com/yi-sheep/NodeJS/blob/master/%E7%AC%AC%E4%B8%89/promise.js)
