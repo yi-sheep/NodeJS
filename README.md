@@ -19,6 +19,8 @@
     + Promise的三种状态及转换
     + then、catch的作用
     + 链式回调的过程
+    ##### 包装一个promise的写文件函数
+    [地址](https://github.com/yi-sheep/NodeJS/blob/master/第三/proimse.js)
 
 
 ---
