@@ -21,18 +21,18 @@ module.exports = object // 这两个都可以导出
     npm是nodejs用来给开发者发布自己定义的模块
     上传需要遵循Conmmonjs的规则
 ##### Conmmonjs 规定了nodejs在写模块(包)的时候应该有的目录结构：(-是文件夹，+是文件)
-    -bin  可执行文件
-    -lib  js的代码文件
-    -test 单元测试的代码
-    -doc  文档
-    +package.json  模块的描述文件
-       *name 模块名
-        description 模块介绍
-       *dependencies 依赖的第三方模块，产品依赖
-        devDependencies 开发依赖
-        version 版本号
-        author 作者
-        main 模块的入口文件 如果不写默认就是index.js
+- bin  可执行文件
+- lib  js的代码文件
+- test 单元测试的代码
+- doc  文档
+    + package.json  模块的描述文件
+       * name 模块名
+       * description 模块介绍
+       * dependencies 依赖的第三方模块，产品依赖
+       * devDependencies 开发依赖
+       * version 版本号
+       * author 作者
+       * main 模块的入口文件 如果不写默认就是index.js
 
 ### 官方模块：
     又称内置模块不需要使用npm下载就可以直接导入使用

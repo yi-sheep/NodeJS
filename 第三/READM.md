@@ -72,7 +72,7 @@ fs.readFileSync(path[, options])
 #### 使用
 ```js
 let promise = new Promise(fun(resolve,reject){
-
+    ...
 });
 ```
 - fun：执行器函数(有两个形式参数用于转换状态) 函数内部放一些异步操作
@@ -90,7 +90,7 @@ let promise = new Promise(fun(resolve,reject){
     ```js
     // 当转换为完成状态的时候执行
     promise.then(fun(data){
-
+        ...
     });
     ```
     - fun：调用函数
@@ -100,7 +100,7 @@ let promise = new Promise(fun(resolve,reject){
     ```js
     // 当转换为失败状态的时候执行 
     promise.catch(fun(data){
-
+        ...
     });
     ```
     - fun：调用函数
