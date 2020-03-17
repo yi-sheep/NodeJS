@@ -11,7 +11,7 @@
 7. 
 
 # Nodejs 文件操作
-[文档地址：](http://nodejs.cn/api/fs.html)
+[文档地址](http://nodejs.cn/api/fs.html)
     
 ### fs.writeFile()
 ```js
