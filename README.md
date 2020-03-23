@@ -21,6 +21,7 @@
     + 链式回调的过程
     ##### 包装一个promise的写文件函数
     [地址](https://github.com/yi-sheep/NodeJS/blob/master/%E7%AC%AC%E4%B8%89/promise.js)
+    + async 和 await
 
 
 ---

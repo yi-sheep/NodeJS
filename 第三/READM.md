@@ -113,10 +113,14 @@ let promise = new Promise(fun(resolve,reject){
         在解决回调地狱的时候需要不断的调用resolve这样会return很多个Promise对象，链式调用就不用再去创建多个变量来接受这些对象
 
     ```js
-    peomise
+    promise
     .then(fun(data){}) // 当最初的执行器函数中调用resolve后执行这个then
     .then(fun(data){}) // 当上一个then中return的Proimse对象中的执行器函数中调用resolve后执行这个then
     ...  // 后面的都是一样
     .catch((data)=>{}); // 无论上面的所有执行器函数中哪一个调用了reject都会执行这个catch
     ```
     [课后练习](https://github.com/yi-sheep/NodeJS/blob/master/%E7%AC%AC%E4%B8%89/promise.js)
+
+    ##### 使用async 和 await
+        使用async 和 await可以省掉promise的链式调用，让代码更直观的看上去是同步代码。
+        使用async修饰函数，在这个函数中把要调用的promise执行器函数写在里面，并且在每一个执行器函数前加上await关键字.

@@ -1,46 +1,29 @@
 let fs = require('fs');
 
-let fun = function(resolve,reject) {
-    fs.writeFile('a.txt','hello 1',(err)=>{
-        if(err){
-            reject(err)
-        }else{
-            console.log(`写入成功`);
-            let data = {
-                content:'hello ',
-                number:1
-            }
-            resolve(data);
-        }
-    });
-};
-
-let proimse = new Promise(fun);
+let data = {
+    file:'hello1.txt',
+    content:'hello 1'
+}
 
 let fun2 = function(data){
-    let number = data.number+1;
-    let content = `${data.content}${number}`;
     return new Promise((resolve,reject)=>{
-        fs.writeFile('a.txt',content,(err)=>{
+        fs.writeFile(data.file,data.content,(err)=>{
             if(err){
                 console.log(`出现错误：${err}`);
-                reject(err)
+                reject(err);
             }else{
-                console.log(`写入成功:${content}`);
-                let data = {
-                    content:'hello ',
-                    number:number
-                }
-                resolve(data);
+                console.log(`写入成功:${data.content}`);
+                resolve('成功');
             }
         });
     })
 }
 
-proimse
-.then(fun2)
-.then(fun2)
-.then(fun2)
-.catch((data)=>{
-    console.log(`失败：${data}`);
-});
+let p = fun2({file:'hello1.txt',content:'hello 1'})
+// .then((res)=>{console.log(res)})
+    .then(()=>{return fun2({file:'hello1.txt',content:'hello 2'})})
+    .then(()=>{return fun2({file:'hello1.txt',content:'hello 3'})})
+    .then(()=>{return fun2({file:'hello1.txt',content:'hello 4'})})
+    .catch((data)=>{
+        console.log(`失败：${data}`);
+    });
