@@ -21,12 +21,11 @@ let fun2 = function(data){
             }
         });
     })
-}
+};
 
-async function a(){
-    await fun2({file:'hello1.txt',content:'hello 1'});
-    await fun2({file:'hello1.txt',content:'hello 2'});
-    await fun2({file:'hello1.txt',content:'hello 3'});
-}
-
-a();
+(async function(){
+    let p1 = await fun2({file:'hello1.txt',content:'hello 1'});
+    console.log(p1); // p1 p2 p3的值就是promise两个状态的传入值
+    let p2 = await fun2({file:'hello2.txt',content:'hello 2'});
+    let p3 = await fun2({file:'hello3.txt',content:'hello 3'});
+})();
