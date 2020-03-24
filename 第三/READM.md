@@ -119,8 +119,9 @@ let promise = new Promise(fun(resolve,reject){
     ...  // 后面的都是一样
     .catch((data)=>{}); // 无论上面的所有执行器函数中哪一个调用了reject都会执行这个catch
     ```
-    [课后练习](https://github.com/yi-sheep/NodeJS/blob/master/%E7%AC%AC%E4%B8%89/promise.js)
+    [课后练习](https://github.com/yi-sheep/NodeJS/blob/master/%E7%AC%AC%E4%B8%89/promise.js) 编写一个包装的promise的函数
 
     ##### 使用async 和 await
         使用async 和 await可以省掉promise的链式调用，让代码更直观的看上去是同步代码。
         使用async修饰函数，在这个函数中把要调用的promise执行器函数写在里面，并且在每一个执行器函数前加上await关键字.
+    [课后练习](https://github.com/yi-sheep/NodeJS/blob/master/%E7%AC%AC%E4%B8%89/test2.js) 分别使用promise和async/await编写一个读取文件
