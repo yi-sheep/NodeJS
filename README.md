@@ -23,6 +23,18 @@
     [地址](https://github.com/yi-sheep/NodeJS/blob/master/%E7%AC%AC%E4%B8%89/promise.js)
     + async 和 await
 
+### 第四次课
+[笔记文档](https://github.com/yi-sheep/NodeJS/blob/master/%E7%AC%AC%E5%9B%9B/READM.md)
+
+- 文件读取流
+- 文件写入流
+- 文件的复制
+
+### 第五次课
+[笔记文档](https://github.com/yi-sheep/NodeJS/blob/master/%E7%AC%AC%E4%BA%94/READM.md)
+
+- 使用net库开启tcp的服务端和客服端
+- 使用http库开启http服务端
 
 ---
 [菜鸟教程](https://www.runoob.com/nodejs/nodejs-tutorial.html)
